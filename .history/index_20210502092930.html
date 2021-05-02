@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Specular Cry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: Arthemys;
+            src: url(fonts/ArthemysDisplay-Regular.ttf);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #titlecontent:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            transition: 0s;
+            animation-play-state: paused;
+        }
+
+
+
+        .title {
+            color: #fff;
+            /* font-size: 275%; */
+            position: static;
+            left: 50%;
+            top: 50%;
+            white-space: nowrap;
+            transform: translate(5%, 5%);
+            /* text-transform: uppercase; */
+        }
+
+        #titles {
+            color: #fff;
+            font-family: Arthemys;
+            word-spacing: 20px;
+            font-size: 6em;
+            position: absolute;
+            width: 100%;
+            height: 50em;
+            bottom: 0;
+            left: 50%;
+            margin-left: -9em;
+            font-size: 350%;
+            font-weight: bold;
+            text-align: justify;
+            transform-origin: 50% 100%;
+            transform: perspective(300px) rotateX(10deg);
+
+            /* perspective(300px) rotateX(35deg) rotateY(48deg) rotateZ(10deg); */
+        }
+
+        #titles::after {
+            position: absolute;
+            content: ' ';
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 60%;
+            background-image: linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        /* #titlecontent {
+            position: absolute;
+            top: 100%;
+            animation: 5s linear 4s infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                top: 100%;
+            }
+
+            100% {
+                top: -170%;
+            }
+        } */
+
+        .scroll-up {
+            height: 170%;
+            overflow: hidden;
+            position: relative;
+            background: black;
+            color: white;
+        }
+
+        .scroll-up p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 60px;
+            text-align: center;
+            /* Starting position */
+            -moz-transform: translateY(100%);
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+            /* Apply animation to this element */
+            -moz-animation: scroll-up 20s linear infinite;
+            -webkit-animation: scroll-up 20s linear infinite;
+            animation: scroll-up 20s linear infinite;
+        }
+
+        /* Move it (define the animation) */
+        @-moz-keyframes scroll-up {
+            0% {
+                -moz-transform: translateY(100%);
+            }
+
+            100% {
+                -moz-transform: translateY(-100%);
+            }
+        }
+
+        @-webkit-keyframes scroll-up {
+            0% {
+                -webkit-transform: translateY(100%);
+            }
+
+            100% {
+                -webkit-transform: translateY(-100%);
+            }
+        }
+
+        @keyframes scroll-up {
+            0% {
+                -moz-transform: translateY(100%);
+                /* Browser bug fix */
+                -webkit-transform: translateY(100%);
+                /* Browser bug fix */
+                transform: translateY(100%);
+            }
+
+            100% {
+                -moz-transform: translateY(-100%);
+                /* Browser bug fix */
+                -webkit-transform: translateY(-100%);
+                /* Browser bug fix */
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="titles">
+        <div class="scroll-up" id="titlecontent">
+
+            <p>
+
+                Sweet face
+                Black like squid ink
+                Wrapped in shadow
+                I grew deep
+                bitten plum purple
+                dead
+                just breathe
+                Fuck
+                Suck in air
+                Grow limp
+                And always Try again
+
+                be shiny black
+                Refract light
+                me a
+                wet pool
+                all things
+                settle here at the bottom.
+
+
+                I break
+                The sky falls
+                damn
+                I’m good,
+                Damn
+                I always is.
+
+                death say “we’ve been
+                waiting, too long
+                glad you decided to
+                come thru, it’s been
+                a minute, like 8yrs”
+
+                And I
+                don’t say
+                Nothin
+                at all, instead
+                let my wetness speak thru me
+
+                I break
+                The sky falls
+                Damn
+                I’m good,
+                Damn
+                I always is.
+
+                “Damn, you look good, all dark
+                like you are. shit makes me hungry
+                Damn you make me wanna die here,
+                Damn
+                break down, turn to earth
+                Damn
+                and born things out of my brokenness
+                THAT good.
+                And you smell good too, like
+                fermenting, like
+                vinegar. Like,
+                microbial production.
+                Like you're made of lots of small things. Damn.
+                I can smell small colonies living in you,
+                bacteria in your gut.
+
+
+                I break
+                The sky falls
+                Damn
+                I’m good,
+                Damn
+                I always is.
+
+                I reproduce.
+                Not like birthing
+                but like multiply.
+
+                I break
+                The sky falls
+                Damn
+                I’m good,
+                Damn
+                I always is.
+
+                I break
+                The sky falls
+                Damn
+                I’m good,
+                Damn
+                I always is.
+
+                I break
+                The sky falls
+                Damn
+                I’m good,
+                Damn
+                I always is.
+
+                Dark like I am
+
+            </p>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
