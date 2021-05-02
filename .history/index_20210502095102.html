@@ -67,10 +67,22 @@
             
         }
 
-        /* #titlecontent {
+        #titlecontent {
             position: absolute;
-            top: 100%;
-            animation: 5s linear 4s infinite;
+            width: 100%;
+  height: 100%;
+            margin: 0;
+            line-height: 100px;
+            text-align: left;
+            font-size: 6em;
+            /* Starting position */
+            -moz-transform: translateY(100%);
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+            /* Apply animation to this element */
+            -moz-animation: scroll-up 100s linear infinite;
+            -webkit-animation: scroll-up 100s linear infinite;
+            animation: scroll-up 100s linear infinite;
         }
 
         @keyframes scroll {
@@ -81,7 +93,7 @@
             100% {
                 top: -170%;
             }
-        } */
+        }
 
         .scroll-up {
             height: 100em;
@@ -94,7 +106,7 @@
         .scroll-up p {
             position: absolute;
             width: 100%;
-  height: 1000%;
+  height: 100%;
             margin: 0;
             line-height: 100px;
             text-align: left;
@@ -104,11 +116,32 @@
             -webkit-transform: translateY(100%);
             transform: translateY(100%);
             /* Apply animation to this element */
-            -moz-animation: scroll-up 10s linear infinite;
-            -webkit-animation: scroll-up 10s linear infinite;
-            animation: scroll-up 10s linear infinite;
+            -moz-animation: scroll-up 100s linear infinite;
+            -webkit-animation: scroll-up 100s linear infinite;
+            animation: scroll-up 100s linear infinite;
         }
-     
+
+        /* Move it (define the animation) */
+        @-moz-keyframes scroll-up {
+            0% {
+                -moz-transform: translateY(100%);
+            }
+
+            100% {
+                -moz-transform: translateY(-100%);
+            }
+        }
+
+        @-webkit-keyframes scroll-up {
+            0% {
+                -webkit-transform: translateY(100%);
+            }
+
+            100% {
+                -webkit-transform: translateY(-100%);
+            }
+        }
+
         @keyframes scroll-up {
             0% {
                 -moz-transform: translateY(100%);
@@ -121,9 +154,9 @@
             100% {
                 -moz-transform: translateY(-100%);
                 /* Browser bug fix */
-                -webkit-transform: translateY(-500%);
+                -webkit-transform: translateY(-100%);
                 /* Browser bug fix */
-                transform: translateY(-500%);
+                transform: translateY(-100%);
             }
         }
     </style>
