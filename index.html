@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Specular Cry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: Arthemys;
+            src: url(fonts/ArthemysDisplay-Regular.ttf);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .wrapper {
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            /* transform: rotateX(4000deg); */
+            /* transform: rotateY(600deg); */
+        }
+
+        .slides {
+            perspective: 313px;
+            padding: 50px 0px;
+            width: 100%;
+            height: 1000px;
+            transform-style: preserve-3d;
+            overflow: scroll;
+            transform: translate(-50%, -0%);
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+
+
+        .slide {
+            position: relative;
+            margin: auto;
+            width: 1000%;
+            /* height: 100%; */
+            transform: rotateX(-80deg);
+            transform-origin: 0 0;
+            transition: 0s 3600s;
+            animation: scroll 50s ease-in-out infinite;
+            transform: rotate(180deg);
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        #titlecontent:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            transition: 0s;
+            animation-play-state: paused;
+        }
+
+
+
+        .title {
+                color: #fff;
+                /* font-size: 275%; */
+                position:static;
+                left: 50%;
+                top: 50%;
+                white-space: nowrap;
+                transform: translate(5%, 5%);
+                /* text-transform: uppercase; */
+            }
+ 
+        #titles {
+            color: #fff;
+            font-family: Arthemys;
+            font-size: 5em;
+            position: absolute;
+            width: 100%;
+            height: 50em;
+            bottom: 0;
+            left: 50%;
+            margin-left: -9em;
+            font-size: 350%;
+            font-weight: bold;
+            text-align: justify;
+            transform-origin: 50% 100%;
+            transform: perspective(300px) rotateX(10deg);
+            
+            /* perspective(300px) rotateX(35deg) rotateY(48deg) rotateZ(10deg); */
+        }
+
+        #titles::after {
+            position: absolute;
+            content: ' ';
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 60%;
+            background-image: linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        #titlecontent {
+            position: absolute;
+            top: 100%;
+            animation: 5s linear 4s infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                top: 100%;
+            }
+
+            100% {
+                top: -170%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="titles">
+        <div id="titlecontent">
+
+            <p>
+             
+                Sweet face 
+                Black like squid ink
+                Wrapped in shadow 
+                I grew deep 
+                bitten plum purple 
+                dead
+                just breathe
+                Fuck
+                Suck in air 
+                Grow limp
+                And always Try again
+                
+                be shiny black
+                Refract light
+                me a
+                wet pool                                                                                                                                                    
+                all  things 
+                settle here at the bottom. 
+                
+                
+                I  break 
+                The sky falls
+                damn 
+                I’m good, 
+                Damn
+                I always is. 
+                
+                death say “we’ve been 
+                waiting, too long
+                glad you decided to 
+                come thru, it’s been 
+                a minute, like 8yrs” 
+                
+                And I
+                don’t say 
+                Nothin
+                 at all, instead 
+                let my wetness speak thru me
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                “Damn, you look good, all dark
+                 like you are.  shit makes me hungry 
+                Damn you make me wanna die here, 
+                Damn
+                break down, turn to earth
+                Damn
+                 and born things out of my brokenness
+                THAT good.
+                And you smell good too, like 
+                 fermenting, like 
+                vinegar. Like,
+                 microbial production.
+                 Like you're made of lots of small things. Damn. 
+                I can smell small colonies living in you, 
+                bacteria in your gut.
+                
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I reproduce. 
+                Not like birthing
+                but like multiply.
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                Dark like I am 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+                Sweet face 
+                Black like squid ink
+                Wrapped in shadow 
+                I grew deep 
+                bitten plum purple 
+                dead
+                just breathe
+                Fuck
+                Suck in air 
+                Grow limp
+                And always Try again
+                
+                be shiny black
+                Refract light
+                me a
+                wet pool                                                                                                                                                    
+                all  things 
+                settle here at the bottom. 
+                
+                
+                I  break 
+                The sky falls
+                damn 
+                I’m good, 
+                Damn
+                I always is. 
+                
+                death say “we’ve been 
+                waiting, too long
+                glad you decided to 
+                come thru, it’s been 
+                a minute, like 8yrs” 
+                
+                And I
+                don’t say 
+                Nothin
+                 at all, instead 
+                let my wetness speak thru me
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                “Damn, you look good, all dark
+                 like you are.  shit makes me hungry 
+                Damn you make me wanna die here, 
+                Damn
+                break down, turn to earth
+                Damn
+                 and born things out of my brokenness
+                THAT good.
+                And you smell good too, like 
+                 fermenting, like 
+                vinegar. Like,
+                 microbial production.
+                 Like you're made of lots of small things. Damn. 
+                I can smell small colonies living in you, 
+                bacteria in your gut.
+                
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I reproduce. 
+                Not like birthing
+                but like multiply.
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                Dark like I am 
+                <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+                Sweet face 
+                Black like squid ink
+                Wrapped in shadow 
+                I grew deep 
+                bitten plum purple 
+                dead
+                just breathe
+                Fuck
+                Suck in air 
+                Grow limp
+                And always Try again
+                
+                be shiny black
+                Refract light
+                me a
+                wet pool                                                                                                                                                    
+                all  things 
+                settle here at the bottom. 
+                
+                
+                I  break 
+                The sky falls
+                damn 
+                I’m good, 
+                Damn
+                I always is. 
+                
+                death say “we’ve been 
+                waiting, too long
+                glad you decided to 
+                come thru, it’s been 
+                a minute, like 8yrs” 
+                
+                And I
+                don’t say 
+                Nothin
+                 at all, instead 
+                let my wetness speak thru me
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                “Damn, you look good, all dark
+                 like you are.  shit makes me hungry 
+                Damn you make me wanna die here, 
+                Damn
+                break down, turn to earth
+                Damn
+                 and born things out of my brokenness
+                THAT good.
+                And you smell good too, like 
+                 fermenting, like 
+                vinegar. Like,
+                 microbial production.
+                 Like you're made of lots of small things. Damn. 
+                I can smell small colonies living in you, 
+                bacteria in your gut.
+                
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I reproduce. 
+                Not like birthing
+                but like multiply.
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                I  break 
+                The sky falls
+                Damn
+                 I’m good, 
+                Damn
+                I always is. 
+                
+                Dark like I am 
+ 
+                </p>
+
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
