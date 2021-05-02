@@ -91,30 +91,26 @@
             transform: scaleX(-1);
             /* margin-left: 75vw; */
             transition: 0s;
-            animation-play-state: paused;
+            /* animation-play-state: paused; */
             overflow-y: scroll;
         }
 
         ::-webkit-scrollbar {
             display: none;
         }
+
     </style>
 </head>
 
 <body>
     <audio id="myAudio">
-        <!-- <source src="Specular Cry.mp3" type="audio/mpeg">
-        Your browser does not support the audio element. -->
+        <source src="Specular Cry.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
 
-    <button onclick="playAudio()" type="button" class="button"
-        style="margin-top: 1em; background-color: transparent;font-family: Arthemys;color:white;border:none;text-transform:uppercase;">Play
-        Audio </button>
+    <button onclick="playAudio()" type="button" class="button" style="margin-top: 1em; background-color: transparent;font-family: Arthemys;color:white;border:none;text-transform:uppercase;">Play Audio </button>
     &mdash;
-    <button onclick="pauseAudio()" type="button"
-        style="margin-top: 1em;background-color: transparent;font-family: Arthemys;color:white;border:none;text-transform:uppercase;">Pause
-        Audio</button>
-
+    <button onclick="pauseAudio()" type="button" style="margin-top: 1em;background-color: transparent;font-family: Arthemys;color:white;border:none;text-transform:uppercase;">Pause Audio</button>
     <div id="titles">
         <div class="scroll-up" id="titlecontent">
 
