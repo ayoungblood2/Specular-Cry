@@ -94,7 +94,7 @@
         .title {
             color: #fff;
             left: 50%;
-            top:50%;
+            top: 50%;
         }
 
         #titles {
@@ -104,7 +104,7 @@
             letter-spacing: 6px;
             width: 100%;
             bottom: 0;
-            margin-right: 20em;
+            margin-left: 20em;
             /* transform-origin: 10% 100%; */
             transform-origin:10% 10% 10% 10% 10%;
 
@@ -114,12 +114,12 @@
         }
 
         .scroll-up {
-            height: 150vh;
+            height: 250vh;
             /* overflow: hidden; */
             position: relative;
             background: black;
             color: white;
-            /* overflow-y: scroll; */
+            overflow-y: scroll;
         }
 
         .scroll-up p {
@@ -143,17 +143,17 @@
 
         @keyframes scroll-up {
             0% {
-                -moz-transform: translateY(18%);
+                -moz-transform: translateY(100%);
                 /* Browser bug fix */
-                -webkit-transform: translateY(18%);
+                -webkit-transform: translateY(100%);
                 /* Browser bug fix */
-                transform: translateY(18%);
+                transform: translateY(10%);
             }
 
             100% {
-                -moz-transform: translateY(-30%);
+                -moz-transform: translateY(-100%);
                 /* Browser bug fix */
-                -webkit-transform: translateY(-30%);
+                -webkit-transform: translateY(-100%);
                 /* Browser bug fix */
                 transform: translateY(-30%);
             }
